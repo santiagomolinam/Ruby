@@ -1,0 +1,12 @@
+vendedor1 = Vendedor.new('Santiago', 'Molina', '1017', '4744114')
+vendedor2 = Vendedor.new('Luz', 'Munoz', '3249', '3177150')
+comprador1 = Comprador.new('Diana', 'Lizeth', '1128', '6009682', 100_000)
+producto1 = Producto.new('Toalla', 10, 25_000, 30_000)
+producto2 = Producto.new('Cepillo', 15, 5_000, 5_500)
+producto3 = Producto.new('Crema dental', 4, 3_500, 4_000)
+vendedor1.productos = [producto1, producto2, producto3]
+comprador1.vendedor = vendedor1
+comprador1.comprar('Crema dental', 3)
+comprador1.comprar('Toalla', 1)
+
+comprador1.buscar('Crema dental')
